@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    cursor: pointer;
+}
+.rover-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: lightgrey;
+}
+.rover-hero-container{
+    background-image: url("https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(133, 133, 133);
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    justify-content:center ;
+}
+
+.rover-middle-section>h2{
+    text-align: center;
+}
+.rover-action-dash{
+    color: mediumseagreen;
+}
+.rover-action-quote-container{
+    border: 1px solid lightgray;
+    background-color: white;
+    height: fit-content;
+    font-weight: bold;
+    position: absolute;
+}
+.rover-action-quote-container>p>a{
+    font-size: 1em;
+    font-weight: 400;
+}
+.rover-action-shot{
+    width: 85%;
+    margin: auto;
+    height: 40vh;
+    position: relative;
+    /* left: 50%;
+    transform: translate(-50%,0); */
+    background-image: url("https://images.pexels.com/photos/422220/pexels-photo-422220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.rover-123-container{
+    margin: 5rem 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.rover-123-container>h2{
+    text-align: center;
+    margin: 1.5rem;
+}
+@media only screen and (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+    }
+    /* .rover-hp-container {
+        
+    } */
+    .rover-header-container{
+        height: 20vh;
+    }
+    .nav-bar{
+        display: block;
+        width: 90vw;
+	    height: 70vh;
+    }
+    /* .dropdown{ */
+        /* display: grid;
+        grid-template-rows: auto auto; */
+    /* } */
+    .dropdown-content{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 90vw;
+        position: fixed;
+        height: 0;
+        top: 0;
+        visibility: hidden;
+        opacity:0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        color: darkgrey;
+
+    }
+    .dc-section{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .dc-section> a{
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .dc-section>h4{
+        background-color: lightgrey;
+        height: 1px;
+    }
+    .overlay {
+		visibility: visible;
+		opacity: 1;
+        height: 70vh;
+        width: 90vw;
+		background: white;
+        z-index: 1;
+        top: 0%
+	}
+    .dropdown>button{
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        height: 10vw;
+        width: 10vh;
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        overflow: visible;
+        position: absolute;
+        top: 2%;
+        right: 0;
+        z-index: 3;
+    }
+    
+    .fa-align-justify{
+		background: #fff;
+        color: gray;;
+        size: 3em;
+		display: block;
+		height: 5vw;
+        width: 5vh;
+		opacity: 1;
+		/* position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-30%); */
+		transition: 0.3s ease-in-out;
+	}
+    .rover-header-left, .rover-header-right{
+        display: none;
+    }
+    .rover-cta-mobile{
+        display: block;
+    }
+    .factandboxContainer{
+        display: none;
+    }
+    .rover-mobile-hero-container>#cat{
+        display: none;
+    }
+    .rover-hero-container{
+        height: 40vh;
+        justify-content: space-evenly;
+    }
+    .rover-middle-section{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        margin-bottom: 5rem;
+    }
+    .rover-middle-section>h2{
+        padding: 2rem 0;
+    }
+    .rover-middle-section>h2{
+        min-width: 400px;
+        max-width: max-content;
+        margin: auto;
+    }
+    .rover-mobile-hero-container{
+        min-width: 300px;
+        padding: 1rem 0;
+    }
+    .rover-mobile-hero{
+        width:300px;
+        margin: 0 25%;
+    }
+    /* ************************************************** */
+    aside{
+        padding: 0.5rem;
+        width: 20vw;
+        bottom: -20%;
+        left: 2%;
+    }
+    aside>*{
+        font-size: 0.5em;
+    }
+    .rover-123-container{
+        width: 420px;
+        margin: auto;
+
+    }
+    .rover-123-item{
+        padding: 2rem;
+    }
+    .rover-123-item>img{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .rover-123-item>h3 , .rover-123-item>p{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 901px) {
+    /* .rover-hp-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .rover-header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    .nav-bar{
+        display: none;
+    }
+    .rover-cta-mobile{
+        display: none;
+    }
+    .factandboxContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .rover-facts-container{
+        margin-left: 1.5rem;
+    }
+    .rover-action-quote-container{
+        
+        padding: 3rem;
+        font-size: 1.3em;
+        width: 17vw;
+        left: 15%;
+        bottom: -45%;
+    }
+    .rover-hero-container{
+        margin-bottom: 3rem;
+    }
+    .rover-mobile-hero-container{
+        display: none;
+    }
+    .rover-fact-indiv{
+        display: flex;
+        align-items:center;
+        gap: 2rem;
+    }
+    .rover-cta-box{
+        width: fit-content;
+        height: fit-content;
+        padding: 3rem;
+        border: 1px solid lightgray;
+        padding: 0;
+        margin: auto;
+    }
+    .rover-cta-header{
+        padding: 0.5rem 3rem;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color: whitesmoke;
+        width: max-content;
+        border: 1px solid lightgray;
+    }
+    .checkmark{
+        color: mediumseagreen;
+    }
+    .rover-cta{
+        background-color: mediumseagreen;
+        color: white;
+        margin: 1.5rem;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 10px;
+        /* width: max-content;         */
+    }
+    li{
+        list-style: none;
+        margin-left: 1.5rem;
+    }
+    .rover-protections{
+        grid-column: 2/3;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .rover-123-item-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .rover-hero-container{
+        height: 50vh;
+        gap: 3rem;
+        background-position-y:-20ch;
+    }
+    .rover-middle-section{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 5rem;
+    }
+  }
